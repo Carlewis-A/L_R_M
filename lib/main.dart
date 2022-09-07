@@ -9,10 +9,13 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Land Of Restoration Ministry',
-      home: MyHomePage(),
+      theme: ThemeData(
+        primaryColor: Colors.white,
+      ),
+      home: const MyHomePage(),
     );
   }
 }
